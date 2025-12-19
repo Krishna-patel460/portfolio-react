@@ -1,6 +1,6 @@
 import React from 'react';
 import { IoArrowForward } from "react-icons/io5";
-import aboutImg from "../../assets/aboutportfolio.png";
+import homeImg from "../../assets/homeportfolio.png";
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
           <div className="md:w-1/2 flex justify-center">
             <img
               className="h-auto w-full max-w-lg rounded-lg object-contain shadow-md"
-              src={aboutImg}
+              src={homeImg}
               alt="about"
             />
           </div>

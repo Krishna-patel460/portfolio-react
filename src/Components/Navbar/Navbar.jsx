@@ -5,63 +5,61 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className='flex flex-wrap justify-between items-center px-6 py-4 md:px-20 bg-[#FFF0F6] text-[#2E2E2E] shadow-md'>
-      {/* Logo */}
-      <span className='text-xl md:text-2xl font-bold tracking-wide text-[#FF69B4]'>
+    <nav
+      id="navbar"
+      className="fixed top-0 left-0 w-full z-50
+                 bg-[#5B2D8B] text-white
+                 px-6 md:px-20 py-4
+                 flex items-center justify-between shadow-md"
+    >
+      {/* LEFT: Logo */}
+      <span className="text-xl md:text-2xl font-bold text-[#FF69B4]">
         Portfolio
       </span>
 
-      {/* Nav Links */}
-      <ul
-        className={`${
-          menu ? 'block' : 'hidden'
-        } absolute top-20 left-0 w-full bg-white bg-opacity-95 text-center p-6 rounded-b-2xl shadow-md md:shadow-none md:bg-transparent md:static md:flex md:gap-8 md:items-center md:w-auto`}
-      >
-        <a href="#About">
-          <li className='text-md md:text-lg font-medium py-2 hover:text-[#FF69B4] transition'>
-            About
-          </li>
-        </a>
-        <a href="#Education">
-          <li className='text-md md:text-lg font-medium py-2 hover:text-[#FF69B4] transition'>
-            Education
-          </li>
-        </a>
-        <a href="#Skills">
-          <li className='text-md md:text-lg font-medium py-2 hover:text-[#FF69B4] transition'>
-            Skills
-          </li>
-        </a>
-        <a href="#Projects">
-          <li className='text-md md:text-lg font-medium py-2 hover:text-[#FF69B4] transition'>
-            Projects
-          </li>
-        </a>
-        <a href="#Footer">
-          <li className='text-md md:text-lg font-medium py-2 hover:text-[#FF69B4] transition'>
-            Contact
-          </li>
-        </a>
+      {/* RIGHT: Desktop Menu */}
+      <ul className="hidden md:flex gap-8 items-center">
+        <li><a href="#About" className="hover:text-[#FF69B4]">About</a></li>
+        <li><a href="#Education" className="hover:text-[#FF69B4]">Education</a></li>
+        <li><a href="#Skills" className="hover:text-[#FF69B4]">Skills</a></li>
+        <li><a href="#Projects" className="hover:text-[#FF69B4]">Projects</a></li>
+        <li><a href="#Footer" className="hover:text-[#FF69B4]">Contact</a></li>
       </ul>
 
-      {/* Hamburger / Close Icon */}
-      <div className='md:hidden z-50'>
+      {/* RIGHT: Mobile Menu Icon */}
+      <div className="md:hidden">
         {menu ? (
           <RiCloseLine
             size={30}
-            className='text-[#FF69B4] cursor-pointer'
+            className="text-[#FF69B4] cursor-pointer"
             onClick={() => setMenu(false)}
           />
         ) : (
           <RiMenu2Line
             size={30}
-            className='text-[#FF69B4] cursor-pointer'
+            className="text-[#FF69B4] cursor-pointer"
             onClick={() => setMenu(true)}
           />
         )}
       </div>
+
+      {/* Mobile Menu */}
+      {menu && (
+        <ul className="absolute top-16 right-6 w-48 bg-white text-[#2E2E2E]
+                       rounded-xl shadow-lg p-4 md:hidden">
+          <li className="py-2"><a href="#About">About</a></li>
+          <li className="py-2"><a href="#Education">Education</a></li>
+          <li className="py-2"><a href="#Skills">Skills</a></li>
+          <li className="py-2"><a href="#Projects">Projects</a></li>
+          <li className="py-2"><a href="#Footer">Contact</a></li>
+        </ul>
+      )}
     </nav>
   );
 };
 
 export default Navbar;
+
+
+
+

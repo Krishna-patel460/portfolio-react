@@ -1,6 +1,6 @@
 import React from 'react';
 import TextChange from '../TextChange';
-import homeImg from '../../assets/homeportfolio.png';
+import profileImg from '../../assets/profile.jpeg';
 
 const Home = () => {
   return (
@@ -29,7 +29,7 @@ const Home = () => {
 
         {/* Image Section */}
         <div className="md:w-1/2 flex justify-center">
-          <img className="w-full max-w-sm md:max-w-md rounded-xl shadow-md" src={homeImg} alt="avatar photo" />
+          <img className="w-full max-w-sm md:max-w-md rounded-xl shadow-md" src={profileImg} alt="avatar photo" />
         </div>
 
       </div>

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div
       id='Footer'
-      className='flex flex-col md:flex-row justify-around items-center text-[#FFF0F6] bg-[#FF69B4] py-10 px-6 md:px-12 text-center md:text-left'
+      className='flex flex-col md:flex-row justify-around items-center bg-[#5B2D8B] text-white py-10 px-6 md:px-12 text-center md:text-left'
     >
       {/* Contact Heading */}
       <div className="mb-6 md:mb-0">
