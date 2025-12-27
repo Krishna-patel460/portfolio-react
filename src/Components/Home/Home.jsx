@@ -7,7 +7,7 @@ const Home = () => {
     <section className="bg-[#FFF0F6] text-[#2E2E2E] py-20 px-6">
       <div className="max-w-[1200px] mx-auto bg-white rounded-3xl shadow-lg p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-12">
 
-        {/* Text Section */}
+        {/* Text Section change thay ae */}
         <div className="md:w-1/2">
           <h1 className="text-3xl md:text-6xl font-bold leading-normal tracking-tight mb-4">
             <TextChange />
@@ -27,7 +27,7 @@ const Home = () => {
 
         </div>
 
-        {/* Image Section */}
+        {/* profile image */}
         <div className="md:w-1/2 flex justify-center">
           <img className="w-full max-w-sm md:max-w-md rounded-xl shadow-md" src={profileImg} alt="avatar photo" />
         </div>

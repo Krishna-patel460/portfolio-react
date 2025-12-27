@@ -28,7 +28,7 @@ const About = () => {
             <div className="flex gap-5 items-start">
               <IoArrowForward size={36} className="mt-1 text-[#FF69B4]" />
               <div>
-                <h3 className="text-2xl md:text-3xl font-semibold leading-normal">Frontend Developer</h3>
+                <h3 className="text-2xl md:text-3xl font-semibold leading-normal">Front-end Developer</h3>
                 <p className="text-base md:text-lg leading-snug text-[#4B4B4B]">
                   I specialize in building responsive web interfaces using modern technologies like React and Tailwind CSS.
                 </p>
